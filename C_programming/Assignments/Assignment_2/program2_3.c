@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////
 //
-//  Function Name : Accept
+//  Function Name : Display
 //  Description   : Printing the number of * taken from user
 //  Input         : Integer 
 //  Output        : Prints n number of string
@@ -11,7 +11,7 @@
 
 #include<stdio.h>
 
-void display(int ino)
+void Display(int ino)
 {
     if(ino>10)
     {
@@ -24,10 +24,10 @@ void display(int ino)
 }
 int main()
 {
-    int i =0;
+    int i = 0;
     printf("Enter a number : ");
     scanf("%d",&i);
-    display(i);
+    Display(i);
     return 0;
 }
 
