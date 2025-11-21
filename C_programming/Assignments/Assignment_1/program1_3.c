@@ -1,16 +1,37 @@
+/////////////////////////////////////////////////////////
+//
+//  Function Name : DivideTwoNumber
+//  Description   : Print the reverse number
+//  Input         : Integer 
+//  Output        : Integer
+//  Author        : Shubham Shankarlal kumawat
+//  Date          : 11/11/2025
+//
+/////////////////////////////////////////////////////////
+
+
 #include<stdio.h>
-void Display()
+void Display(int ino)
 {
-    int i=0;
-    i=5;
-    while(i!=0)
+    int iCnt=0;
+    
+   for(iCnt=ino;iCnt>=1;iCnt--)
     {
-        printf("%d\t",i);
-        i--;
+        printf("%d\n",iCnt);
     }
 }
 int main()
 {
-    Display();
+    int ivalue = 0;
+    printf("Enter a number : ");
+    scanf("%d",&ivalue);
+
+    Display(ivalue);
     return 0;
 }
+
+/////////////////////////////////////////////////////////
+//
+//  Input : 5       Output : 5 4 3 2 1
+//
+/////////////////////////////////////////////////////////
