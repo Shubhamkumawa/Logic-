@@ -1,9 +1,20 @@
+/////////////////////////////////////////////////////////
+//
+//  Function Name : CheckEven
+//  Description   : Accepts number and check even or odd
+//  Input         : Integer  
+//  Output        : Boolean
+//  Author        : Shubham Shankarlal kumawat
+//  Date          : 11/11/2025
+//
+/////////////////////////////////////////////////////////
+
 #include<stdio.h>                                   
 #include<stdbool.h>                                 
 
 
 
-bool ChkEven(int iNo)
+bool CheckEven(int iNo)
 {
  
     if((iNo % 2) == 0)
@@ -23,7 +34,7 @@ int main()
     printf("Enter Number:");
     scanf("%d",&iValue);
 
-    bRet = ChkEven(iValue);
+    bRet = CheckEven(iValue);
 
     if(bRet == true)
     {
@@ -36,3 +47,10 @@ int main()
 
     return 0; 
 }
+
+/////////////////////////////////////////////////////////
+//
+//  Input: 2        Output: 2 is Even Number 
+//  Input: 5        Output: 5 is Odd Number
+//
+/////////////////////////////////////////////////////////
