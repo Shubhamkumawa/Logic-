@@ -12,7 +12,7 @@
 
 #include<stdio.h>
 
-void Display(int iNo)
+void Accept(int iNo)
 {
     int iCnt = 0;
     
@@ -28,7 +28,7 @@ int main()
 
     printf("Enter a number : ");
     scanf("%d",&iValue);
-    Display(iValue);
+    Accept(iValue);
     return 0 ;
 
 }
