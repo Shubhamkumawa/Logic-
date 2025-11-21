@@ -1,6 +1,16 @@
+/////////////////////////////////////////////////////////
+//
+//  Function Name : DivideTwoNumber
+//  Description   : It is used to perform Division
+//  Input         : Integer , Integer
+//  Output        : Integer
+//  Author        : Shubham Shankarlal kumawat
+//  Date          : 11/11/2025
+//
+/////////////////////////////////////////////////////////
 #include<stdio.h>
 
-int Divide(int iNo1 , int iNo2)
+int DivideTwoNumber(int iNo1 , int iNo2)
 {
     int iAns = 0;
     if (iNo2<0)
@@ -16,8 +26,14 @@ int main()
     int iValue1=15 , iValue2 = 5;
     int iRet;
 
-    iRet = Divide(iValue1 , iValue2);
+    iRet = DivideTwoNumber(iValue1 , iValue2);
     printf("Division is %d", iRet );
 
     return 0;
 }
+
+/////////////////////////////////////////////////////////
+//
+//  Input : 15 , 5       Output : 3
+//
+/////////////////////////////////////////////////////////
