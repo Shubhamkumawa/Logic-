@@ -1,3 +1,15 @@
+/////////////////////////////////////////////////////////
+//
+//  Function Name : DivideTwoNumber
+//  Description   : checking whether number is divisible by 5 or not 
+//  Input         : Integer 
+//  Output        : Boolean
+//  Author        : Shubham Shankarlal kumawat
+//  Date          : 11/11/2025
+//
+/////////////////////////////////////////////////////////
+
+
 #include<stdio.h>
 #include<stdbool.h>
 bool check (int iNo)
@@ -29,3 +41,9 @@ int main()
     }
     return 0;
 }
+
+/////////////////////////////////////////////////////////
+//
+//  Input : 15       Output : Divisible by 5
+//
+/////////////////////////////////////////////////////////
