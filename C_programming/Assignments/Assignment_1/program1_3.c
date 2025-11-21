@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////
 //
-//  Function Name : DivideTwoNumber
+//  Function Name : ReverseDisplay
 //  Description   : Print the reverse number
 //  Input         : Integer 
 //  Output        : Integer
@@ -11,7 +11,7 @@
 
 
 #include<stdio.h>
-void Display(int ino)
+void ReverseDisplay(int ino)
 {
     int iCnt=0;
     
@@ -26,7 +26,7 @@ int main()
     printf("Enter a number : ");
     scanf("%d",&ivalue);
 
-    Display(ivalue);
+    ReverseDisplay(ivalue);
     return 0;
 }
 
@@ -35,3 +35,4 @@ int main()
 //  Input : 5       Output : 5 4 3 2 1
 //
 /////////////////////////////////////////////////////////
+
