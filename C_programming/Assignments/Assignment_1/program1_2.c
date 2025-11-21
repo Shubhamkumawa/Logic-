@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////
 //
-//  Function Name : DivideTwoNumber
+//  Function Name : Display
 //  Description   : Print marvellous for the value taken from user
 //  Input         : Integer 
 //  Output        : Prints n munber of string
@@ -36,3 +36,4 @@ int main()
 //                           Marvellous
 //
 /////////////////////////////////////////////////////////
+
