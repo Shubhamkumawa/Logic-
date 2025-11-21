@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////
 //
-//  Function Name : DivideTwoNumber
+//  Function Name : Check
 //  Description   : checking whether number is divisible by 5 or not 
 //  Input         : Integer 
 //  Output        : Boolean
@@ -47,3 +47,4 @@ int main()
 //  Input : 15       Output : Divisible by 5
 //
 /////////////////////////////////////////////////////////
+
