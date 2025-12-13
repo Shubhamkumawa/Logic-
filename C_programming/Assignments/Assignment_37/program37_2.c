@@ -1,0 +1,59 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : CountChar
+//  Description :   count the frequency of that string
+//  Input :         String , Character
+//  output :        Integer
+//  Author :        Shubham Shankarlal Kumawat
+//  Date :          01/12/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>                                              
+
+
+int CountChar(char ch[] , char cValue)
+{
+    int iCount = 0 ;
+    
+    while(*ch!= '\0')
+    {
+        if(*ch == cValue )
+        {
+            iCount++ ;
+        }
+        ch++;
+    }
+    return iCount ;
+
+}
+
+int main()
+{
+    char cArr[50] ={'\0'};
+    char cValue = '\0';
+    int iRet = 0 ;
+
+    printf("Enter String:");
+    scanf("%[^'\n']s", cArr);
+
+    fflush(stdin);
+
+    printf("Enter the character to be searched:");
+    scanf("%c", &cValue);
+
+    iRet = CountChar(cArr , cValue);
+    
+    printf("frequency of %c is : %d ",cValue, iRet);
+    
+    
+    
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Input1::Marvellous Multi os      Input2:o                Output:frequency of o is : 2
+//  Input1 :Demo                     Input2:W                Output:frequency of W is : 0
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

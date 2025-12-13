@@ -1,0 +1,64 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : ChkChar
+//  Description :   check whether the searched character is present or not
+//  Input :         String , Character
+//  output :        Boolean
+//  Author :        Shubham Shankarlal Kumawat
+//  Date :          01/12/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>                                              
+#include<stdbool.h>                                            
+
+bool ChkChar(char ch[] , char cValue)
+{
+    bool bflag = false ;
+    
+    while(*ch!= '\0')
+    {
+        if(*ch == cValue )
+        {
+            bflag =true ;
+        }
+        ch++;
+    }
+    return bflag ; 
+
+}
+
+int main()
+{
+    char cArr[50] ={'\0'};
+    char cValue = '\0';
+    bool bRet = 0 ;
+
+    printf("Enter String:");
+    scanf("%[^'\n']s", cArr);
+
+    fflush(stdin);
+
+    printf("Enter the character to be searched:");
+    scanf("%c", &cValue);
+
+    bRet = ChkChar(cArr , cValue);
+    if(bRet == true)
+    {
+        printf("%c is present ",cValue);
+    }
+    else
+    {
+        printf("%c is not present ",cValue);
+    }
+    
+    
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Input1:Marvellous        Input2:l                 Output:l is present
+//  Input1 :Demo             Input2:a                 Output:o is not present
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
