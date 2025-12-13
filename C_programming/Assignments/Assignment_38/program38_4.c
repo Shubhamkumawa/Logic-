@@ -1,0 +1,62 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : StrCpySmall
+//  Description :   copy the string in lower case
+//  Input:          String 
+//  output :        Void
+//  Author :        Shubham Shankarlal Kumawat
+//  Date :          01/12/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>                                              
+
+void StrCpySmall(char src[] , char dest[])
+{
+    while(*src != '\0')
+    {
+        if((*src >= 'A')&&(*src <= 'Z'))
+        {
+            *dest = *src + 32 ;
+        }
+        else
+        {
+            *dest = *src ;
+        }
+        src++;
+        dest++;
+        
+    }
+    *dest = '\0';
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//Entery point function
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    char cArr[50] ={'\0'};
+    char cBrr[50] ;
+    
+    printf("Enter String:");
+    scanf("%[^'\n']s", cArr);
+
+    StrCpySmall(cArr , cBrr);
+    
+    printf("updated String: %s " , cBrr);
+    
+    
+    
+    return 0;
+}// end of main function
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Input1:MARVELLOUS MULTI OS              Output:updated String: marvellous multi os
+//  Input1 :HELLO WORLD                      Output:updated String: hello world
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

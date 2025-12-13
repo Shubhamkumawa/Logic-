@@ -1,0 +1,56 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : StrCpyX
+//  Description :   copy the string by removing white spaces
+//  Input:          String 
+//  output :        Void
+//  Author :        Shubham Shankarlal Kumawat
+//  Date :          01/12/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>                                              
+
+void StrCpyX(char src[] , char dest[])
+{
+    while(*src != '\0')
+    {
+        if(*src == ' ')
+        {
+            src++;
+        }
+        else
+        {
+            *dest = *src ;
+            dest++;
+            src++ ;
+        }
+       
+    }
+    *dest = '\0';
+
+}
+
+int main()
+{
+    char cArr[50] ={'\0'};
+    char cBrr[50] ;
+    
+    printf("Enter String:");
+    scanf("%[^'\n']s", cArr);
+
+    StrCpyX(cArr , cBrr);
+    
+    printf("String whithout white space : %s " , cBrr);
+    
+    
+    
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Input1:Marvellous Multi OS               Output:String whithout white space : MarvellousMultiOS
+//  Input1 :Hello World                       Output:String whithout white space : HelloWorld
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
