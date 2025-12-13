@@ -1,0 +1,47 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : struprX
+//  Description :   convert lower case into upper case
+//  Input :         String
+//  output :        void
+//  Author :        Shubham Shankarlal Kumawat
+//  Date :          30/11/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>                                              
+
+void struprX(char ch[])
+{
+    
+    while(*ch!= '\0')
+    {
+        if((*ch >= 'a')&&(*ch <= 'z'))
+        {
+            *ch = *ch - 32 ;
+        }
+        ch++;
+    }
+
+}
+
+int main()
+{
+    char cArr[50] ={'\0'};
+
+    printf("Enter String:");
+    scanf("%[^'\n']s", cArr);
+
+    struprX(cArr);
+
+    printf("Updated string : %s", cArr);
+
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Input1:Marvellous Multi OS         Output: Updated string : MARVELLOUS MULTI OS   
+//  Input1 :HELLO world                Output: Updated string : HELLO WORLD
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
