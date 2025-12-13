@@ -1,0 +1,55 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : Difference
+//  Description :   Return Diiference between capital letter and small letter
+//  Input :         String
+//  output :        Integer
+//  Author :        Shubham Shankarlal Kumawat
+//  Date :          30/11/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>                                              
+
+
+int Difference(char ch[])
+{
+    int iCountSmall = 0;
+    int iCountCapital = 0 ;
+    while(*ch!= '\0')
+    {
+        if((*ch >= 'a')&&(*ch <= 'z'))
+        {
+            iCountSmall++;
+        }
+        else if((*ch >= 'A')&& (*ch <= 'Z'))
+        {
+            iCountCapital++;
+        }
+        ch++;
+    }
+    
+    return (iCountSmall - iCountCapital);
+
+}
+
+int main()
+{
+    char cArr[50] ={'\0'};
+    int iRet = 0 ;
+
+    printf("Enter String:");
+    scanf("%[^'\n']s", cArr);
+
+    iRet = Difference(cArr);
+    printf("Difference between the uppercase and lowercase in string :%d\n", iRet);
+
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Input1:Marvellous Multi OS         Output: Difference between the uppercase and lowercase in string :9      
+//  Input1 :HELLO world                Output: Difference between the uppercase and lowercase in string :0      
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

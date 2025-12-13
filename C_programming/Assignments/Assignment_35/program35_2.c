@@ -1,0 +1,50 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : CountSmall
+//  Description :   Return Count of Small letters
+//  Input :         String
+//  output :        Integer
+//  Author :        Shubham Shankarlal Kumawat
+//  Date :          30/11/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>                                              
+
+
+int CountSmall(char ch[])
+{
+    int iCount = 0;
+    while(*ch!= '\0')
+    {
+        if((*ch >= 'a')&&(*ch <= 'z'))
+        {
+            iCount++;
+        }
+        ch++;
+    }
+    
+    return iCount ;
+
+}
+
+int main()
+{
+    char cArr[50] ={'\0'};
+    int iRet = 0 ;
+
+    printf("Enter String:");
+    scanf("%[^'\n']s", cArr);
+
+    iRet = CountSmall(cArr);
+    printf("Small letter in string :%d\n", iRet);
+
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Input1:Marvellous Multi OS             Output: Small letter in string :13            
+//  Input1 :HELLO World                    Output: Small letter in string :4      
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
